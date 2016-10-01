@@ -1,0 +1,44 @@
+#!/bin/bash
+clear
+echo "          __   __  ______   _______  ___   _  _______ "
+echo "         |  |_|  ||      | |   _   ||   | | ||   _   |"
+echo "         |       ||  _    ||  |_|  ||   |_| ||  |_|  |"
+echo "         |       || | |   ||       ||      _||       |"
+echo "         |       || |_|   ||       ||     |_ |       |"
+echo "         | ||_|| ||       ||   _   ||    _  ||   _   |"
+echo "         |_|   |_||______| |__| |__||___| |_||__| |__|"
+
+loading1(){
+sleep 0.5
+echo -ne '                         Memasang.                  \r'
+}
+loading2(){
+sleep 0.5
+echo -ne '                         Memasang..                  \r'
+}
+loading3(){
+sleep 0.5
+echo -ne '                         Memasang...                  \r'
+}
+
+#Jalankan
+echo;echo;echo -ne "         Pasang Semua Tools Kali? (y/t)"
+
+read -r pemilihan
+  if [ "$pemilihan" = y ]
+     then
+       loading1
+       loading2
+       loading3
+       loading2
+       loading1
+       loading2
+       loading3
+       loading2
+       loading1
+	     sudo chmod +x mdaka
+       clear
+	     sudo ./mdaka
+     else
+       clear
+  fi
